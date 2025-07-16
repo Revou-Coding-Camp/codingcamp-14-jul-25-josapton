@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Practice Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Our Profile</a></li>
+        <li><a href="https://github.com/josapton">Portfolio</a></li>
+        <li><a href="#message-us">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Hi <span id="welcome-name"></span>, Welcome To Website</h1>
+    <p>Ini adalah website latihan pertama</p>
+  </section>
+
+  <!-- Our Headquarter -->
+  <section id="our-headquarter">
+    <h2>Our Headquarter</h2>
+    <div class="locations">
+      <div class="circle">Jakarta</div>
+      <div class="circle">Bandung</div>
+      <div class="circle">Surabaya</div>
+    </div>
+  </section>
+
+  <!-- Message Us Form -->
+  <section id="message-us">
+    <h2>Message Us</h2>
+    <form id="contact-form">
+      <label>
+        Nama
+        <input type="text" name="nama" />
+      </label>
+      <label>
+        Tanggal Lahir
+        <input type="date" name="dob" />
+      </label>
+      <fieldset>
+        <legend>Jenis Kelamin</legend>
+        <label><input type="radio" name="gender" value="Laki-Laki" /> Laki-Laki</label>
+        <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+      </fieldset>
+      <label>
+        Pesan
+        <textarea name="message" rows="4"></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="form-result"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created By Joko Saptono</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* Reset & basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background: #004a99;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#home {
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#home p {
+  font-size: 1.1rem;
+}
+
+/* Our Headquarter */
+.locations {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background: #eee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Message Us Form */
+form {
+  max-width: 500px;
+  margin: 1rem auto;
+  display: grid;
+  gap: 1rem;
+}
+
+form label,
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100px;
+  padding: 0.5rem;
+  background: #004a99;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Form Result */
+#form-result {
+  max-width: 500px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+/* Photo Banner */
+#photo-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Vision & Mission */
+#vision-mission .vision,
+#vision-mission .mission {
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #004a99;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .locations {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle {
+    margin-bottom: 1rem;
+  }
+}
