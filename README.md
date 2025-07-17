@@ -48,4 +48,4 @@ codingcamp-14-jul-25-josapton/
 
 **To run locally:**  
 Open `index.html` in your browser, or use VS Code's Live Server for best results.  
-All features work without a backend—just static files!
+All features work without a backend just static files!
